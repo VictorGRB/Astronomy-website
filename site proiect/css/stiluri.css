@@ -1,0 +1,29 @@
+.container {
+position:relative;
+font-family: Arial;
+}
+.text-block{
+font-family: sans-serif;
+position: absolute;
+background-color: white;
+top: 10px;
+left: 150px;
+right: 150px;
+}
+.footer {
+position: relative;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: grey;
+color: white;
+text-align: center;
+}
+.text2{
+font-size: xx-large;
+top:80px;
+left :650px;
+right: 750px;
+position: absolute;
+color: white;
+}

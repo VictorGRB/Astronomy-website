@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/stiluri.css">
+		<style type="text/css">
+		div.lungire{
+		position: relative;
+		text-align: center;
+		}
+			#fmare{
+				font-size:80px;
+			}
+		</style>
+		<script type="text/javascript">
+		imagine=new Array();
+		
+		imagine[0]="img/slides/slide1.jpg";
+		imagine[1]="img/slides/slide2.jpg";
+		imagine[2]="img/slides/slide3.jpg";
+		imagine[3]="img/slides/slide4.jpg";
+		imagine[4]="img/slides/slide5.jpg";
+		imagine[5]="img/slides/slide6.jpeg";
+		imagine[6]="img/slides/slide7.jpg";
+		imagine[7]="img/slides/slide8.jpg";
+		
+		</script>
+	</head>
+	<body>
+		
+		<div class="container">
+			<img src="img/background/pozabg.jpg" width="100%">
+			<div class="text2">
+				<h1>Gallery</h1>
+			</div>
+		</div>
+		<div><table border="1" width="100%">
+			<th><a href="pg1.html">Home</a></th>
+			<th><a href="pg2.html">Planets</a></th>
+			<th><a href="pg3.html">Stars</a></th>
+			<th><a href="pg4.html">Gallery</a></th>
+			<th><a href="pg5.html">Store</a></th>
+			<th><a href="pg6.html">Links</a></th>
+		</table>
+	</div>
+	<div class="lungire">
+		<h1 id="fmare">Behold the Wonders of the Universe</h1>
+		
+		<img name="slide" id="slideul" src="img/slides/slide1.jpeg" width="600px" height="700px">
+	</div>
+</body>
+<script type="text/javascript">
+	pas=1;
+	function slideIt(){
+	poza=document.getElementById("slideul");
+	poza.src=imagine[pas];
+	if (pas<7){
+			pas= pas+1;
+		}else{
+			pas=0;
+		}
+setTimeout("slideIt()",1500);
+}
+slideIt();
+</script>
+
+<div class="footer">
+	Astronomie Victor Copyright 2018
+</div>
+</body>
+</html>
